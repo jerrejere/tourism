@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react";
 import Loading from "./Loading";
 import Tours from "./Tours";
-const url = "http://localhost:5000/tours";
+// import Navbar from "./Navbar"
+const url = "http://localhost:3000/tours";
 
 function App() {
   const [loading, setLoading] = useState(false);
@@ -40,9 +41,9 @@ function App() {
     return (
       <main>
         <div className="title">
-          <h2>no tours left</h2>
+          <h2>Sorry your card is empty</h2>
           <button className="btn" onClick={() => fetchTours()}>
-            reload
+           Please Reload
           </button>
         </div>
       </main>
